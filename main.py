@@ -47,36 +47,6 @@ print('___Задание 3___')
 print()
 
 
-# def read_files(txt_list):
-#     txt_dict = {}
-#     for book in txt_list:
-#         with open(book, encoding='UTF-8') as file:
-#             counter = 0
-#             for line in file:
-#                 counter += 1
-#             txt_dict[book] = counter
-#     ready_dict = sorted(txt_dict.items(), key=lambda item: item[1])
-#     return print(ready_dict)
-#
-#
-# read_files(['1.txt', '2.txt', '3.txt'])
-
-
-# def open_dict(name):
-#     with open("result.txt", "w", encoding="UTF-8") as d:
-#         basic_dict = {}
-#         for i in name:
-#             with open(i, encoding="UTF-8") as f: a = f.readlines()
-#             basic_dict[i] = len(a)
-#         for keys, values in sorted(basic_dict.items(), key=lambda item: item[1]):
-#             d.writelines(f'{keys}\n{str(values)}\n')
-#             for line in open(keys, encoding="UTF-8"): d.writelines(line)
-#
-#
-# list_1 = ["1.txt", "2.txt", "3.txt"]
-# open_dict(list_1)
-
-
 def read_files(txt_list):  # Читаем файлики и записываем их по кол-ву строк в новый файл, ю ноу...
     txt_dict = {}
     ready_txt = open('final_text.txt', 'w', encoding='UTF-8')
