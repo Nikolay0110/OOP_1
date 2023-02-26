@@ -42,3 +42,21 @@ print('___Задание 2___')
 print()
 get_shop_list_by_dishes(
     ['Запеченный картофель', 'Омлет', 'Фахитос', 'Утка по-пекински'], 5)
+print()
+print('___Задание 3___')
+print()
+
+
+def read_files(txt_list):
+    txt_dict = {}
+    for book in txt_list:
+        with open(book, encoding='UTF-8') as file:
+            counter = 0
+            for line in file:
+                counter += 1
+            txt_dict[book] = counter
+    ready_dict = sorted(txt_dict.items(), key=lambda item: item[1])
+    return print(ready_dict)
+
+
+read_files(['1.txt', '2.txt', '3.txt'])
