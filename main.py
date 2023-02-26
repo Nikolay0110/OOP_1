@@ -47,7 +47,7 @@ print('___Задание 3___')
 print()
 
 
-def read_files(txt_list):  # Читаем файлики и записываем их по кол-ву строк в новый файл, ю ноу...
+def read_files(txt_list):
     txt_dict = {}
     ready_txt = open('final_text.txt', 'w', encoding='UTF-8')
     for book in txt_list:
